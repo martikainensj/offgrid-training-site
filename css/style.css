@@ -323,14 +323,22 @@ main {
   padding: var(--spacing-lg) 0;
 }
 
+.screenshot-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text-muted);
+  margin-bottom: 0.75rem;
+  padding-left: 0.25rem;
+}
+
 .screenshot-scroll {
   display: flex;
   gap: 1.25rem;
-  justify-content: center;
   overflow-x: auto;
-  scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
-  padding: 1rem 0;
+  padding: 0.5rem 0 2rem;
   scrollbar-width: none;
 }
 
@@ -340,7 +348,6 @@ main {
 
 .screenshot-item {
   flex: 0 0 auto;
-  scroll-snap-align: center;
 }
 
 .screenshot-item img {
@@ -351,21 +358,34 @@ main {
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
 }
 
+.screenshot-item--ipad img {
+  width: 340px;
+  border-radius: 14px;
+}
+
 @media (max-width: 768px) {
   .screenshot-scroll {
     justify-content: flex-start;
-    padding: 1rem 1.5rem;
+    padding: 0.5rem 1.5rem 2rem;
     margin: 0 -1.5rem;
   }
 
   .screenshot-item img {
     width: 200px;
   }
+
+  .screenshot-item--ipad img {
+    width: 300px;
+  }
 }
 
 @media (max-width: 480px) {
   .screenshot-item img {
     width: 180px;
+  }
+
+  .screenshot-item--ipad img {
+    width: 260px;
   }
 }
 
