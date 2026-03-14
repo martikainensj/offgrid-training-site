@@ -4,23 +4,74 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Offgrid Training — Private Offline Workout Tracker for iOS</title>
-  <meta name="description" content="Offgrid Training is a private, offline workout tracker for iOS. Log your workouts, track progress, and own your data — no accounts, no cloud, no ads.">
+  <meta name="description" content="Offgrid Training is a private, offline workout tracker for iOS. Log sets, reps, weight, duration, distance, and RPE. Track PRs, build custom workouts, and own your data — no accounts, no cloud, no ads, no analytics.">
+  <meta name="keywords" content="workout tracker, offline workout app, private fitness app, iOS workout tracker, gym log, training log, weightlifting tracker, RPE tracker, no cloud workout app, no account workout tracker, offline gym tracker, privacy workout app">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Offgrid Training — Private Offline Workout Tracker">
-  <meta property="og:description" content="A private, offline workout tracker for iOS. Your workouts. Your device. Your rules.">
+  <meta property="og:title" content="Offgrid Training — Private Offline Workout Tracker for iOS">
+  <meta property="og:description" content="A private, offline workout tracker built for lifters who want full control over their training data. No accounts, no cloud, no ads, no analytics.">
   <meta property="og:type" content="website">
   <!-- REPLACE: Set your actual site URL -->
   <meta property="og:url" content="https://example.com">
   <!-- REPLACE: Add an OG image (1200x630px recommended) -->
   <!-- <meta property="og:image" content="https://example.com/og-image.png"> -->
 
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Offgrid Training — Private Offline Workout Tracker">
+  <meta name="twitter:description" content="A private, offline workout tracker for iOS. No accounts. No cloud. No ads. No analytics. Just training.">
+
+  <!-- Canonical URL — REPLACE with your actual URL -->
+  <link rel="canonical" href="https://example.com/">
+
   <!-- REPLACE: Add your favicon files -->
   <!-- <link rel="icon" href="favicon.ico" sizes="any"> -->
   <!-- <link rel="icon" href="favicon.svg" type="image/svg+xml"> -->
   <!-- <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- Structured Data for AI and Search Engines -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Offgrid Training",
+    "description": "Offgrid Training is a private, offline workout tracker for iOS built for lifters who want full control over their training data. Log sets, reps, weight, duration, distance, and RPE. Track PRs, build custom workouts, and save reusable templates. All data stays on your device — no accounts, no cloud, no ads, no analytics.",
+    "applicationCategory": "HealthApplication",
+    "operatingSystem": "iOS",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "featureList": [
+      "Log sets, reps, weight, duration, distance, and RPE",
+      "Build workouts your way",
+      "Save reusable workout templates",
+      "Track personal records and progress with charts",
+      "Organize exercises with categories and variations",
+      "Back up, restore, and transfer your data",
+      "Export and share workout templates",
+      "100% offline — no internet required",
+      "No account required",
+      "No cloud sync",
+      "No ads or advertising SDKs",
+      "No analytics or third-party tracking",
+      "All data stored locally on device"
+    ],
+    "screenshot": [
+      "images/1-workouts-tracked.jpg",
+      "images/2-progress-visible.jpg",
+      "images/3-exercises-organized.jpg",
+      "images/4-workouts-structured.jpg"
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -36,7 +87,7 @@
       <nav class="site-nav" role="navigation">
         <a href="index.html">Home</a>
         <a href="privacy.html">Privacy</a>
-        <a href="support.html">Support</a>
+        <a href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
@@ -49,12 +100,12 @@
         <span class="hero-label">iOS App</span>
         <h1>Your workouts. Your device.<br>Your rules.</h1>
         <p class="subtitle">
-          Offgrid Training is a private, offline workout tracker built for people who want full control over their training data. No accounts. No cloud. No compromises.
+          Offgrid Training is a private, offline workout tracker built for lifters who want full control over their training data. Everything stays on your device — no accounts, no cloud, no ads, and no analytics.
         </p>
         <!-- REPLACE: Update the href with your actual App Store URL -->
-        <a href="https://apps.apple.com/app/idXXXXXXXXXX" class="hero-cta" aria-label="Download on the App Store">
+        <a href="https://apps.apple.com/app/idXXXXXXXXXX" class="hero-cta" aria-label="Get it on the App Store">
           <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-          Download on the App Store
+          Available on the App Store
         </a>
       </div>
     </section>
@@ -64,16 +115,16 @@
       <div class="container">
         <div class="screenshot-scroll">
           <div class="screenshot-item">
-            <img src="images/1-workouts-tracked.jpg" alt="Workout tracking in Offgrid Training" width="280" height="607" loading="lazy">
+            <img src="images/1-workouts-tracked.jpg" alt="Logging sets, reps, and weight in Offgrid Training for iOS" width="280" height="607" loading="lazy">
           </div>
           <div class="screenshot-item">
-            <img src="images/2-progress-visible.jpg" alt="Progress charts and personal records" width="280" height="607" loading="lazy">
+            <img src="images/2-progress-visible.jpg" alt="Progress charts and personal records in Offgrid Training" width="280" height="607" loading="lazy">
           </div>
           <div class="screenshot-item">
-            <img src="images/3-exercises-organized.jpg" alt="Exercise categories and organization" width="280" height="607" loading="lazy">
+            <img src="images/3-exercises-organized.jpg" alt="Exercise library with categories and variations in Offgrid Training" width="280" height="607" loading="lazy">
           </div>
           <div class="screenshot-item">
-            <img src="images/4-workouts-structured.jpg" alt="Structured workout templates" width="280" height="607" loading="lazy">
+            <img src="images/4-workouts-structured.jpg" alt="Workout templates and data management in Offgrid Training" width="280" height="607" loading="lazy">
           </div>
         </div>
       </div>
@@ -83,90 +134,76 @@
     <section class="section">
       <div class="container">
         <div class="section-header">
-          <h2>Built for serious training</h2>
-          <p>Everything you need to track your workouts — nothing you don't.</p>
+          <h2>Everything you need to train. Nothing you don't.</h2>
         </div>
         <div class="feature-grid">
 
           <div class="feature-card">
-            <h3>Detailed Logging</h3>
-            <p>Log sets, reps, weight, duration, distance, and RPE. Capture every detail of every session.</p>
+            <h3>Log everything</h3>
+            <p>Sets, reps, weight, duration, distance, and RPE. Every detail of every session.</p>
           </div>
 
           <div class="feature-card">
-            <h3>Build Your Workouts</h3>
-            <p>Create workouts your way. No rigid structures or forced programs — just your plan, your format.</p>
+            <h3>Build workouts your way</h3>
+            <p>No rigid structures or forced programs. Just your plan, your format.</p>
           </div>
 
           <div class="feature-card">
-            <h3>Reusable Templates</h3>
-            <p>Save workout templates and reuse them. Export and share templates with others.</p>
+            <h3>Reusable templates</h3>
+            <p>Save workout templates and reuse them. Export and share with others.</p>
           </div>
 
           <div class="feature-card">
-            <h3>PRs &amp; Progress Charts</h3>
-            <p>Track personal records and follow your progress over time with clear, readable charts.</p>
+            <h3>Track PRs and progress</h3>
+            <p>Follow your personal records over time with clear, readable charts.</p>
           </div>
 
           <div class="feature-card">
-            <h3>Categories &amp; Variations</h3>
-            <p>Organize your exercises with custom categories and variations. Keep your library clean.</p>
+            <h3>Organize your exercises</h3>
+            <p>Custom categories and variations. Keep your library clean.</p>
           </div>
 
           <div class="feature-card">
-            <h3>Backup &amp; Transfer</h3>
-            <p>Back up your data, restore it, and transfer everything to a new device. You own your data.</p>
+            <h3>Backup and transfer</h3>
+            <p>Back up your data, restore it, transfer to a new device. You own your data.</p>
           </div>
 
         </div>
       </div>
     </section>
 
-    <!-- Philosophy -->
-    <section class="section philosophy">
+    <!-- Privacy Philosophy -->
+    <section class="section philosophy" aria-label="Privacy features">
       <div class="container">
         <div class="section-header">
-          <h2>Built for privacy</h2>
-          <p>Your training data belongs to you — and only you.</p>
+          <h2>No sign-up. No tracking. No sync lock-in.</h2>
+          <p>Just training.</p>
         </div>
         <div class="philosophy-grid">
-
           <div class="philosophy-item">
-            <div class="icon">🔒</div>
-            <h3>No Account Required</h3>
-            <p>Open the app and start training. No sign-up, no login.</p>
+            <h3>No account required</h3>
+            <p>Open the app and start training. No sign-up, no login, no personal information needed.</p>
           </div>
-
           <div class="philosophy-item">
-            <div class="icon">📱</div>
-            <h3>Data Stays on Device</h3>
-            <p>All workout data is stored locally. Nothing leaves your phone.</p>
+            <h3>Data stays on device</h3>
+            <p>All workout data is stored locally on your iPhone. Nothing leaves your phone.</p>
           </div>
-
           <div class="philosophy-item">
-            <div class="icon">☁️</div>
-            <h3>No Cloud Sync</h3>
+            <h3>No cloud sync</h3>
             <p>No servers. No cloud storage. Your data is never uploaded anywhere.</p>
           </div>
-
           <div class="philosophy-item">
-            <div class="icon">🚫</div>
-            <h3>No Ads</h3>
-            <p>No advertising SDKs. No banners. No interruptions.</p>
+            <h3>No ads</h3>
+            <p>No advertising SDKs. No banners. No interruptions. Ever.</p>
           </div>
-
           <div class="philosophy-item">
-            <div class="icon">👁️</div>
-            <h3>No Analytics</h3>
+            <h3>No analytics</h3>
             <p>No third-party tracking. No usage analytics. Your behavior is not monitored.</p>
           </div>
-
           <div class="philosophy-item">
-            <div class="icon">📦</div>
-            <h3>Full Data Control</h3>
-            <p>Export, back up, restore, and transfer your data at any time.</p>
+            <h3>Full data control</h3>
+            <p>Export, back up, restore, and transfer your data at any time. It's yours.</p>
           </div>
-
         </div>
       </div>
     </section>
@@ -175,11 +212,11 @@
     <section class="cta-banner">
       <div class="container">
         <h2>Train on your terms</h2>
-        <p>Available now on the App Store.</p>
+        <p>No sign-up. No tracking. No sync lock-in. Just training.</p>
         <!-- REPLACE: Update the href with your actual App Store URL -->
-        <a href="https://apps.apple.com/app/idXXXXXXXXXX" class="hero-cta" aria-label="Download on the App Store">
+        <a href="https://apps.apple.com/app/idXXXXXXXXXX" class="hero-cta" aria-label="Get it on the App Store">
           <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-          Download on the App Store
+          Available on the App Store
         </a>
       </div>
     </section>
@@ -190,13 +227,12 @@
   <footer class="site-footer">
     <div class="container">
       <div class="footer-inner">
-        <!-- REPLACE: Update the year and entity name if needed -->
-        <p class="footer-copy">&copy; 2026 Offgrid Training</p>
+        <p class="footer-copy">&copy; 2026 Samuli Martikainen</p>
         <nav class="footer-links">
           <a href="privacy.html">Privacy Policy</a>
-          <a href="support.html">Support</a>
+          <a href="contact.html">Contact</a>
           <!-- REPLACE: Update with your actual support email -->
-          <a href="mailto:support@example.com">Contact</a>
+          <a href="mailto:support@example.com">Email</a>
         </nav>
       </div>
     </div>

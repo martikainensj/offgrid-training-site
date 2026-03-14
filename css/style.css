@@ -16,8 +16,8 @@
   --color-accent-muted: #2563eb;
   --color-accent-glow: rgba(59, 130, 246, 0.08);
 
-  --font-stack: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro Display',
-    'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-stack: 'Inter', -apple-system, BlinkMacSystemFont, 'Helvetica Neue',
+    Helvetica, Arial, sans-serif;
 
   --max-width: 1080px;
   --spacing-xs: 0.5rem;
@@ -254,6 +254,31 @@ main {
   fill: currentColor;
 }
 
+/* --- Feature Showcase (screenshot + text pairs) --- */
+.section {
+  padding: var(--spacing-xl) 0;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
+}
+
+.section-header h2 {
+  font-size: clamp(1.5rem, 3.5vw, 2rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #fff;
+  margin-bottom: var(--spacing-xs);
+}
+
+.section-header p {
+  color: var(--color-text-muted);
+  font-size: 1.05rem;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
 /* --- Screenshots Gallery --- */
 .screenshots {
   padding: var(--spacing-lg) 0;
@@ -305,31 +330,6 @@ main {
   }
 }
 
-/* --- Section Titles --- */
-.section {
-  padding: var(--spacing-xl) 0;
-}
-
-.section-header {
-  text-align: center;
-  margin-bottom: var(--spacing-lg);
-}
-
-.section-header h2 {
-  font-size: clamp(1.5rem, 3.5vw, 2rem);
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  color: #fff;
-  margin-bottom: var(--spacing-xs);
-}
-
-.section-header p {
-  color: var(--color-text-muted);
-  font-size: 1.05rem;
-  max-width: 560px;
-  margin: 0 auto;
-}
-
 /* --- Feature Grid --- */
 .feature-grid {
   display: grid;
@@ -347,12 +347,6 @@ main {
 
 .feature-card:hover {
   border-color: #3a3a3a;
-}
-
-.feature-icon {
-  font-size: 1.6rem;
-  margin-bottom: 0.75rem;
-  line-height: 1;
 }
 
 .feature-card h3 {
@@ -394,11 +388,14 @@ main {
 .philosophy-item {
   text-align: center;
   padding: 1.5rem 1rem;
+  background-color: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  transition: border-color 0.2s ease;
 }
 
-.philosophy-item .icon {
-  font-size: 1.5rem;
-  margin-bottom: 0.75rem;
+.philosophy-item:hover {
+  border-color: #3a3a3a;
 }
 
 .philosophy-item h3 {
@@ -618,7 +615,7 @@ main {
 .contact-email {
   display: inline-block;
   background-color: var(--color-accent);
-  color: #fff;
+  color: #fff !important;
   font-weight: 600;
   font-size: 0.95rem;
   padding: 0.75rem 1.5rem;
@@ -628,7 +625,7 @@ main {
 
 .contact-email:hover {
   background-color: var(--color-accent-muted);
-  color: #fff;
+  color: #fff !important;
   transform: translateY(-1px);
 }
 
