@@ -1,0 +1,35 @@
+# Offgrid Training
+
+> A private, offline workout tracker for iOS.
+
+Offgrid Training is a workout tracker built for training without compromises. Your training data stays on your device — no accounts, no cloud, no ads, and no analytics.
+
+## Features
+
+- Log sets, reps, weight, duration, distance, and RPE
+- Build workouts with the structure that fits your training
+- Save reusable workout templates
+- Track PRs and follow progress with charts
+- Organize your exercise library with categories and variations
+- Back up, restore, and transfer your data
+- Export and share workout templates
+
+## Privacy
+
+- 100% offline — no internet required
+- No account required
+- No cloud sync
+- No ads or advertising SDKs
+- No analytics or third-party tracking
+- All workout data stored locally on device
+
+## Links
+
+- Website: https://martikainensj.github.io/offgrid-training-site/
+- Privacy Policy: https://martikainensj.github.io/offgrid-training-site/privacy.html
+- Support: https://martikainensj.github.io/offgrid-training-site/support.html
+- Contact: smartikainen@outlook.com
+
+## Developer
+
+Samuli Martikainen

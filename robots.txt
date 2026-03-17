@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://martikainensj.github.io/offgrid-training-site/sitemap.xml
