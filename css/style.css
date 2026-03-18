@@ -5,9 +5,9 @@
 
 /* --- Custom Properties --- */
 :root {
-  --color-bg: #0e0e0e;
+  --color-bg: #010103;
   --color-bg-elevated: #161616;
-  --color-bg-card: #1a1a1a;
+  --color-bg-card: #FFFFFF10;
   --color-border: #2a2a2a;
   --color-text: #e5e5e5;
   --color-text-muted: #888;
@@ -333,12 +333,38 @@ main {
   padding-left: 0.25rem;
 }
 
+.screenshot-scroll-wrapper {
+  position: relative;
+}
+
+.screenshot-scroll-wrapper::before,
+.screenshot-scroll-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 3rem;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.screenshot-scroll-wrapper::before {
+  left: -3rem;
+  background: linear-gradient(to right, var(--color-bg), transparent);
+}
+
+.screenshot-scroll-wrapper::after {
+  right: -3rem;
+  background: linear-gradient(to left, var(--color-bg), transparent);
+}
+
 .screenshot-scroll {
   display: flex;
   gap: 1.25rem;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
-  padding: 0.5rem 0 2rem;
+  margin: 0 -3rem;
+  padding: 0.5rem 3rem 2rem;
   scrollbar-width: none;
 }
 
@@ -364,12 +390,6 @@ main {
 }
 
 @media (max-width: 768px) {
-  .screenshot-scroll {
-    justify-content: flex-start;
-    padding: 0.5rem 1.5rem 2rem;
-    margin: 0 -1.5rem;
-  }
-
   .screenshot-item img {
     width: 200px;
   }
@@ -604,7 +624,7 @@ main {
 }
 
 .prose ul li::before {
-  content: '—';
+  content: '–';
   position: absolute;
   left: 0;
   color: var(--color-text-subtle);
