@@ -28,6 +28,7 @@ Offgrid Training is a workout tracker built for training without compromises. Yo
 - Website: https://martikainensj.github.io/offgrid-training-site/
 - Privacy Policy: https://martikainensj.github.io/offgrid-training-site/privacy.html
 - Support: https://martikainensj.github.io/offgrid-training-site/support.html
+- Terms of Use: https://martikainensj.github.io/offgrid-training-site/terms.html
 - Contact: smartikainen@outlook.com
 
 ## Developer

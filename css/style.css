@@ -561,6 +561,22 @@ main {
   }
 }
 
+/* Mobile overrides: reduce large horizontal gutters for screenshot scroller */
+@media (max-width: 1080px) {
+  .screenshot-scroll-wrapper::before,
+  .screenshot-scroll-wrapper::after {
+    width: 1.5rem;
+  }
+
+  .screenshot-scroll-wrapper::before { left: -1.5rem; }
+  .screenshot-scroll-wrapper::after  { right: -1.5rem; }
+
+  .screenshot-scroll {
+    margin: 0 -1.5rem;
+    padding: 0.5rem 1.5rem 2rem;
+  }
+}
+
 /* --- Prose / Content Pages (Privacy, Support) --- */
 .page-header {
   padding: var(--spacing-xl) 0 var(--spacing-lg);
