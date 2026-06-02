@@ -414,6 +414,7 @@ main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.25rem;
+  --feature-bg-size: 300% 200%;
 }
 
 .feature-card,
@@ -427,10 +428,37 @@ main {
 }
 
 .feature-card {
+  position: relative;
+  overflow: hidden;
   padding: 1.75rem;
+  background: var(--color-bg-card);
+}
+
+.feature-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
   background:
-    radial-gradient(circle at top right, rgba(59, 130, 246, 0.08), transparent 42%),
-    var(--color-bg-card);
+    radial-gradient(circle at 78% 12%, rgba(59, 130, 246, 0.12), transparent 42%),
+    radial-gradient(circle at 18% 92%, rgba(59, 130, 246, 0.045), transparent 40%),
+    linear-gradient(135deg, rgba(59, 130, 246, 0.045), transparent 68%);
+  background-size: var(--feature-bg-size);
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
+
+.feature-card:nth-child(1)::before { background-position: left top; }
+.feature-card:nth-child(2)::before { background-position: center top; }
+.feature-card:nth-child(3)::before { background-position: right top; }
+.feature-card:nth-child(4)::before { background-position: left bottom; }
+.feature-card:nth-child(5)::before { background-position: center bottom; }
+.feature-card:nth-child(6)::before { background-position: right bottom; }
+
+.feature-card h3,
+.feature-card p {
+  position: relative;
+  z-index: 1;
 }
 
 .feature-card:hover {
@@ -457,13 +485,29 @@ main {
 @media (max-width: 768px) {
   .feature-grid {
     grid-template-columns: repeat(2, 1fr);
+    --feature-bg-size: 200% 300%;
   }
+
+  .feature-card:nth-child(1)::before { background-position: left top; }
+  .feature-card:nth-child(2)::before { background-position: right top; }
+  .feature-card:nth-child(3)::before { background-position: left center; }
+  .feature-card:nth-child(4)::before { background-position: right center; }
+  .feature-card:nth-child(5)::before { background-position: left bottom; }
+  .feature-card:nth-child(6)::before { background-position: right bottom; }
 }
 
 @media (max-width: 480px) {
   .feature-grid {
     grid-template-columns: 1fr;
+    --feature-bg-size: 100% 600%;
   }
+
+  .feature-card:nth-child(1)::before { background-position: center 0%; }
+  .feature-card:nth-child(2)::before { background-position: center 20%; }
+  .feature-card:nth-child(3)::before { background-position: center 40%; }
+  .feature-card:nth-child(4)::before { background-position: center 60%; }
+  .feature-card:nth-child(5)::before { background-position: center 80%; }
+  .feature-card:nth-child(6)::before { background-position: center 100%; }
 }
 
 /* --- Privacy Features Section --- */
