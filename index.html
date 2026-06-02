@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Offgrid Training — Private Offline Workout Tracker for iOS</title>
-  <meta name="description" content="Offgrid Training is a private, offline workout tracker for iOS. Log sets, reps, weight, duration, distance, and RPE. Track PRs, build workouts, and keep your training data on your device — no accounts, no cloud, no ads, no analytics.">
-  <meta name="keywords" content="workout tracker, gym, exercise, log, lifting, offline, private, training log, workout log, iOS workout tracker, RPE tracker, offline gym tracker">
+  <meta name="description" content="Offgrid Training is a private, offline workout tracker for iOS. Log workouts, create custom exercise types, define your own tracked values, and keep your training data on your device — no accounts, no cloud, no ads, no analytics.">
+  <meta name="keywords" content="workout tracker, gym, exercise, log, lifting, offline, private, training log, workout log, iOS workout tracker, RPE tracker, custom exercise tracker, offline gym tracker">
 
   <!-- Open Graph -->
   <meta property="og:title" content="Offgrid Training — Private Offline Workout Tracker for iOS">
-  <meta property="og:description" content="A private, offline workout tracker built for training without compromises. No accounts, no cloud, no ads, no analytics.">
+  <meta property="og:description" content="A private, offline workout tracker built for training without compromises. Custom exercise types, flexible tracked values, and no accounts, cloud, ads, or analytics.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://martikainensj.github.io/offgrid-training-site/">
   <meta property="og:locale" content="en_US">
@@ -19,7 +19,7 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Offgrid Training — Private Offline Workout Tracker">
-  <meta name="twitter:description" content="A private, offline workout tracker for iOS. No accounts. No cloud. No ads. No analytics. Just training.">
+  <meta name="twitter:description" content="A private, offline workout tracker for iOS with custom exercise types and flexible tracked values. No accounts. No cloud. No ads. No analytics.">
   <meta name="twitter:image" content="https://martikainensj.github.io/offgrid-training-site/images/og-image.jpg">
 
   <!-- Google Site Verification -->
@@ -42,18 +42,21 @@
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     "name": "Offgrid Training",
-    "description": "Offgrid Training is a private, offline workout tracker for iOS built for training without compromises. Log sets, reps, weight, duration, distance, and RPE. Track PRs, build workouts, and save reusable templates. Your training data stays on your device — no accounts, no cloud, no ads, no analytics.",
+    "description": "Offgrid Training is a private, offline workout tracker for iOS built for training without compromises. Your training data stays on your device: no accounts, no cloud, no ads, and no analytics. Log workouts, create custom exercise types, define your own tracked values, build workouts, save templates, track personal records, and back up or transfer your data.",
     "applicationCategory": "HealthApplication",
     "operatingSystem": "iOS",
     "url": "https://martikainensj.github.io/offgrid-training-site/",
     "featureList": [
-      "Log sets, reps, weight, duration, distance, and RPE",
-      "Build workouts with the structure that fits your training",
+      "Log sets, reps, weight, duration, distance, RPE, calories, pace, volume, and estimated 1RM",
+      "Create custom exercise types for the way you train",
+      "Define your own tracked values with numbers, time, text, units, progress direction, and formulas",
+      "Build workouts with normal groups, planned exercise slots, and supersets",
       "Save reusable workout templates",
-      "Track PRs and follow progress with charts",
+      "Track personal records and follow progress with charts",
       "Organize your exercise library with categories and variations",
-      "Back up, restore, and transfer your data",
-      "Export and share workout templates",
+      "Choose metric or imperial units",
+      "Back up, restore, export, import, and transfer your data",
+      "Built-in exercise types for strength, cardio, and flexibility",
       "100% offline — no internet required",
       "No account required",
       "No cloud sync",
@@ -63,10 +66,12 @@
     ],
     "screenshot": [
       "https://martikainensj.github.io/offgrid-training-site/images/1-workouts-tracked-iphone.jpg",
+      "https://martikainensj.github.io/offgrid-training-site/images/5-tracking-customized-iphone.jpg",
       "https://martikainensj.github.io/offgrid-training-site/images/2-progress-visible-iphone.jpg",
       "https://martikainensj.github.io/offgrid-training-site/images/3-exercises-organized-iphone.jpg",
       "https://martikainensj.github.io/offgrid-training-site/images/4-workouts-structured-iphone.jpg",
       "https://martikainensj.github.io/offgrid-training-site/images/1-workouts-tracked-ipad.jpg",
+      "https://martikainensj.github.io/offgrid-training-site/images/5-tracking-customized-ipad.jpg",
       "https://martikainensj.github.io/offgrid-training-site/images/2-progress-visible-ipad.jpg",
       "https://martikainensj.github.io/offgrid-training-site/images/3-exercises-organized-ipad.jpg",
       "https://martikainensj.github.io/offgrid-training-site/images/4-workouts-structured-ipad.jpg"
@@ -122,6 +127,9 @@
             <img src="images/1-workouts-tracked-iphone.jpg" alt="Logging sets, reps, and weight in Offgrid Training on iPhone" width="280" height="607" loading="lazy">
           </div>
           <div class="screenshot-item">
+            <img src="images/5-tracking-customized-iphone.jpg" alt="Custom tracking fields in Offgrid Training on iPhone" width="280" height="607" loading="lazy">
+          </div>
+          <div class="screenshot-item">
             <img src="images/2-progress-visible-iphone.jpg" alt="Progress charts and personal records in Offgrid Training on iPhone" width="280" height="607" loading="lazy">
           </div>
           <div class="screenshot-item">
@@ -137,6 +145,9 @@
         <div class="screenshot-scroll">
           <div class="screenshot-item screenshot-item--ipad">
             <img src="images/1-workouts-tracked-ipad.jpg" alt="Logging workouts in Offgrid Training on iPad" loading="lazy">
+          </div>
+          <div class="screenshot-item screenshot-item--ipad">
+            <img src="images/5-tracking-customized-ipad.jpg" alt="Custom tracking fields in Offgrid Training on iPad" loading="lazy">
           </div>
           <div class="screenshot-item screenshot-item--ipad">
             <img src="images/2-progress-visible-ipad.jpg" alt="Progress charts in Offgrid Training on iPad" loading="lazy">
@@ -161,33 +172,33 @@
         <div class="feature-grid">
 
           <div class="feature-card">
-            <h3>Log everything</h3>
-            <p>Sets, reps, weight, duration, distance, and RPE. Every detail of every session.</p>
+            <h3>Track training your own way</h3>
+            <p>Log sets, reps, weight, duration, distance, RPE, calories, pace, volume, and estimated 1RM.</p>
           </div>
 
           <div class="feature-card">
-            <h3>Build workouts your way</h3>
-            <p>Build workouts with the structure that fits your training. No rigid programs or forced formats.</p>
+            <h3>Custom exercise types</h3>
+            <p>Create your own types for strength, cardio, flexibility, mobility, skill work, or anything you want to measure.</p>
           </div>
 
           <div class="feature-card">
-            <h3>Reusable templates</h3>
-            <p>Save workout templates and reuse them. Export and share with others.</p>
+            <h3>Your own tracked values</h3>
+            <p>Define numbers, time, text, units, progress direction, and formulas for the data that matters to you.</p>
           </div>
 
           <div class="feature-card">
-            <h3>Track PRs and progress</h3>
-            <p>Track PRs and follow your progress over time with clear, readable charts.</p>
+            <h3>Flexible workout structure</h3>
+            <p>Build workouts with normal groups, planned exercise slots, supersets, and reusable templates.</p>
           </div>
 
           <div class="feature-card">
-            <h3>Organize your exercises</h3>
-            <p>Organize your exercise library with categories and variations. Keep it clean.</p>
+            <h3>Progress that stays readable</h3>
+            <p>Track personal records and follow progress with charts across the values you care about.</p>
           </div>
 
           <div class="feature-card">
-            <h3>Backup and transfer</h3>
-            <p>Back up your data, restore it, transfer to a new device. You own your data.</p>
+            <h3>Full data control</h3>
+            <p>Choose metric or imperial units. Back up, restore, export, import, and transfer your data.</p>
           </div>
 
         </div>
@@ -224,7 +235,7 @@
           </div>
           <div class="feature-card">
             <h3>Full data control</h3>
-            <p>Export, back up, restore, and transfer your data at any time. It's yours.</p>
+            <p>Export, import, back up, restore, and transfer your data at any time. It's yours.</p>
           </div>
         </div>
       </div>
@@ -234,17 +245,17 @@
     <section class="section roadmap" aria-label="Roadmap">
       <div class="container">
         <div class="section-header">
-          <h2>Coming next</h2>
-          <p>Features in progress, longer-term plans, and ideas I want to hear about.</p>
+          <h2>Recently added and coming next</h2>
+          <p>Completed features, longer-term plans, and ideas I want to hear about.</p>
         </div>
         <div class="roadmap-grid">
-          <article class="roadmap-card roadmap-card--featured roadmap-card--inprogress">
-            <span class="roadmap-status">In progress</span>
+          <article class="roadmap-card roadmap-card--featured roadmap-card--done">
+            <span class="roadmap-status">Done</span>
             <h3>Custom Exercise Type</h3>
             <p>
               Create your own exercise types and track the data points that matter to you. Strength,
-              cardio, and flexibility already ship with fixed fields, but custom types open the door
-              to fully personal tracking - and it does not have to be limited to traditional exercise.
+              cardio, and flexibility are built in, but custom types open the door to mobility,
+              conditioning, running drills, skill work, music practice, or anything else you want to measure.
             </p>
           </article>
 
